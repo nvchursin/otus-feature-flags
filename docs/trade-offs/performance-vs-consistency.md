@@ -1,4 +1,4 @@
-## Trade-off:Performance vs Consistency
+## Trade-off: Performance vs Consistency
 
 Для обеспечения высокой доступности и низкой задержки `ff-evaluator` при вычислении флагов используется in-memory cache.
 
