@@ -1,0 +1,22 @@
+@startuml c4-context
+!include <C4/C4_Context>
+
+title Feature Flags Service — context
+
+skinparam linetype ortho
+skinparam nodesep 180
+skinparam ranksep 150
+
+Person(admin, "Администратор")
+
+System(feature_flags, "Feature Flags Service")
+
+System_Ext(consumer, "Приложение")
+System_Ext(identity_provider, "oauth2-провайдер")
+System_Ext(cloud_services, "Cloud services")
+
+Rel_D(admin, feature_flags, "Управляет флагами",)
+Rel_D(consumer, feature_flags, "Получает значения флагов")
+Rel_D(feature_flags, identity_provider, "Проверяет доступ")
+Rel_D(feature_flags, cloud_services, "Управляет снапшотами конфигурации")
+@enduml

@@ -1,0 +1,30 @@
+@startuml service-decomposition
+title Feature Flags Service
+
+skinparam linetype ortho
+skinparam nodesep 180
+skinparam ranksep 150
+skinparam componentStyle rectangle
+
+actor "Администратор" as admin
+actor "Приложение" as consumer
+cloud "Object storage + cdn" as storage
+[oauth2-provider] as auth
+[ff-consumer sdk] as sdk
+
+package "Feature Flags Service" {
+    [ff-crud] as crud
+    [ff-distribution] as dist
+    [ff-evaluator] as eval
+    database "flags db" as db
+}
+
+admin --> crud: /api/admin
+consumer --> sdk
+crud --> auth
+crud --> db
+dist --> crud: /api/snapshot
+eval --> storage
+sdk --> eval: /api/flags
+
+@enduml
