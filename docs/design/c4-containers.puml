@@ -16,13 +16,14 @@ Container_Boundary(feature_flags, "Feature Flags Service") {
     Container(crud, "ff-crud", "Web-service", "Админка, CRUD флагов, экспорт снапшотов")
     ContainerDb(database, "База конфигурации", "Database")
     Container(evaluator, "ff-evaluator", "API-приложение", "Вычисляет флаги")
+    Container(distribution, "ff-distribution", "Background worker", "Распространяет снапшот")
 }
 
 Rel(admin, crud, "Управляет флагами")
 Rel(crud, identity_provider, "Проверяет доступ")
 Rel(crud, database, "Читает и записывает конфигурацию, версии и audit-log")
-Rel(crud, cloud_services, "Публикует конфигурацию")
 Rel(evaluator, cloud_services, "Проверяет версию и скачивает новый снапшот")
-
+Rel(distribution, crud, "Запрашивает новый снапшот")
+Rel(distribution, cloud_services, "Публикует конфигурацию")
 Rel(consumer, evaluator, "Запрашивает флаги")
 @enduml
