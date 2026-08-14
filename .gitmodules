@@ -1,0 +1,3 @@
+[submodule "rsff"]
+	path = rsff
+	url = https://github.com/nvchursin/rsff
