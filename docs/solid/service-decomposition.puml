@@ -14,7 +14,7 @@ cloud "Object storage + cdn" as storage
 
 package "Feature Flags Service" {
     [ff-crud] as crud
-    [ff-distribution] as dist
+    [ff-distributor] as dist
     [ff-evaluator] as eval
     database "flags db" as db
 }

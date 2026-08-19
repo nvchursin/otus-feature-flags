@@ -1,0 +1,21 @@
+@startuml frontend-project-structure
+
+title Layers Dependencies
+
+skinparam linetype ortho
+skinparam nodesep 80
+skinparam ranksep 70
+
+rectangle app #DDD6FE
+rectangle pages #BFDBFE
+rectangle entities #BBF7D0
+rectangle shared #FDE68A
+
+app --> pages
+app --> entities
+app --> shared
+pages --> entities
+pages --> shared
+entities --> shared
+
+@enduml
