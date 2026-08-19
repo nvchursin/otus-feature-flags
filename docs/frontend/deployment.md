@@ -7,14 +7,15 @@ flowchart LR
     A["Типовые проверки:<br/>prettier, lint, typecheck, unit-tests"]
     B["Сборка production-бандла<br/>и проверка размера чанков"]
     C["Публикация артефактов<br/>в ephemeral-среду"]
-    D["Approve"]
-    E["Деплой в staging"]
-    F["e2e- и ui-тесты"]
-    G["Merge"]
-    H["Деплой в production"]
-    I["Инвалидация cdn-кеша"]
+    D["e2e- и ui-тесты<br/>в ephemeral-среде"]
+    E["Approve"]
+    F["Merge"]
+    G["Деплой в staging"]
+    H["Smoke-тесты"]
+    I["Деплой в production"]
+    J["Инвалидация cdn-кеша"]
 
-    A --> B --> C --> D --> E --> F --> G --> H --> I
+    A --> B --> C --> D --> E --> F --> G --> H --> I --> J
 ```
 
 ## Environments
