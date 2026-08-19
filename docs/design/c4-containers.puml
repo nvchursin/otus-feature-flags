@@ -16,7 +16,7 @@ Container_Boundary(feature_flags, "Feature Flags Service") {
     Container(crud, "ff-crud", "Web-service", "Админка, CRUD флагов, экспорт снапшотов")
     ContainerDb(database, "База конфигурации", "Database")
     Container(evaluator, "ff-evaluator", "API-приложение", "Вычисляет флаги")
-    Container(distribution, "ff-distribution", "Background worker", "Распространяет снапшот")
+    Container(distribution, "ff-distributor", "Background worker", "Распространяет снапшот")
 }
 
 Rel(admin, crud, "Управляет флагами")

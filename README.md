@@ -6,3 +6,4 @@
 - [Trade-offs](./docs/trade-offs)
 - [Design](./docs/design)
 - [Frontend](./docs/frontend)
+- [SLI/SLO](./sli-slo.md)
