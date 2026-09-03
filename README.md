@@ -2,7 +2,7 @@
 
 - [Overview](./docs/overview.md)
 - [Utility Tree](./docs/utility-tree.md)
-- [SLI/SLO](./sli-slo.md)
+- [SLI/SLO](./docs/sli-slo.md)
 - [ADRs](./docs/adrs)
 - [Trade-offs](./docs/trade-offs)
 - [Design](./docs/design)
