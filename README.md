@@ -7,5 +7,6 @@
 - [Trade-offs](./docs/trade-offs)
 - [Design](./docs/design)
   - [Синхронные и асинхронные взаимодействия](./docs/design/sync-async-interactions.md)
+  - [Развёртывание в Kubernetes](./docs/design/kubernetes-deployment.md)
 - [Frontend](./docs/frontend)
 - [Code](https://github.com/nvchursin/rsff)
