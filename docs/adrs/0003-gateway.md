@@ -26,6 +26,8 @@ Gateway разделяет два потока трафика:
 
 Gateway не содержит бизнес-логики и не преобразует контракты сервисов.
 
+Детали аутентификации и модели доступа описаны в [отдельном документе](../design/authentication-authorization.md).
+
 ```mermaid
 flowchart LR
     A[Admin] --> GW[API Gateway]
