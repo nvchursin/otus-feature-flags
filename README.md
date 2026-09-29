@@ -5,6 +5,7 @@
 - [SLI/SLO](./docs/sli-slo.md)
 - [Карта деградации](./docs/degradation-map.md)
 - [Изменяемость архитектуры](./docs/modifiability.md)
+- [Надёжность и наблюдаемость](./docs/observability.md)
 - [ADRs](./docs/adrs)
   - [Кеширование конфигурации фича-флагов](./docs/adrs/0001-adr-flags-cache.md)
   - [Тип фронтенда](./docs/adrs/0002-adr-monolith-frontend.md)
