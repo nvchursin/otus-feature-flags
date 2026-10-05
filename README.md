@@ -6,6 +6,7 @@
 - [Карта деградации](./docs/degradation-map.md)
 - [Изменяемость архитектуры](./docs/modifiability.md)
 - [Надёжность и наблюдаемость](./docs/observability.md)
+- [Хранилища, шарды и реплики](./docs/sharding.md)
 - [ADRs](./docs/adrs)
   - [Кеширование конфигурации фича-флагов](./docs/adrs/0001-adr-flags-cache.md)
   - [Тип фронтенда](./docs/adrs/0002-adr-monolith-frontend.md)
@@ -22,4 +23,5 @@
   - [Deployment](./docs/frontend/deployment.md)
   - [Risks Matrix](./docs/frontend/risks.md)
 - [Декомпозиция сервисов](./docs/solid/service-decomposition.md)
+- [Итоговое архитектурное решение](./docs/final-solution.md)
 - [Code](https://github.com/nvchursin/rsff)
